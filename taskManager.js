@@ -1,0 +1,44 @@
+const readline = require('readline');
+const Que = readline.createInterface({
+    input: process.stdin,
+    output: process.stdout
+});
+//declare list
+let id=1;
+const tasks = new Map();
+
+
+//add task
+function addTask() {
+    Que.question("Enter new task name:",(name) =>{
+        tasks.set(id, name);
+        console.log("✅ Task added!")
+        id++;
+        menu();
+    })
+
+}
+//start menu
+function menu(){
+console.log("Welcome to Task manager! \n");
+console.log("1.List tasks");
+console.log("2.Add new task");
+console.log("3.Mark task as complete");
+console.log("4.Delete task");
+console.log("5.Exit\n");
+
+Que.question("Enter your choice:",(num) =>{
+    if(num == 1){
+        console.log(tasks);
+    }
+    else if(num==2){
+       addTask()
+    }
+    else if(num==3){}
+    else if(num==4){}
+    else if(num==5){}
+    })
+}
+
+
+menu();
