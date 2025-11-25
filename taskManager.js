@@ -1,3 +1,4 @@
+//universal user input
 const readline = require('readline');
 const Que = readline.createInterface({
     input: process.stdin,
@@ -7,11 +8,21 @@ const Que = readline.createInterface({
 let id=1;
 const tasks = new Map();
 
+//List tasks
+function listTasks(){
+    console.log("\nYour Tasks:");
+    tasks.forEach((task, key) =>{
+        console.log(`${key}. ${task}`);
+    });
+
+    menu();
+}
 
 //add task
 function addTask() {
     Que.question("Enter new task name:",(name) =>{
-        tasks.set(id, name);
+        const formatted =`[ ] ${name}`;
+        tasks.set(id, formatted);
         console.log("✅ Task added!")
         id++;
         menu();
@@ -29,7 +40,7 @@ console.log("5.Exit\n");
 
 Que.question("Enter your choice:",(num) =>{
     if(num == 1){
-        console.log(tasks);
+        listTasks()
     }
     else if(num==2){
        addTask()

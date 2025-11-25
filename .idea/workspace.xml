@@ -4,7 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bc6bd090-de7c-488f-8c7a-769d785f2369" name="Changes" comment="2 nd commit">
+    <list default="true" id="bc6bd090-de7c-488f-8c7a-769d785f2369" name="Changes" comment="menu done&#10;tasks mostly">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/taskManager.js" beforeDir="false" afterPath="$PROJECT_DIR$/taskManager.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -35,6 +36,9 @@
     &quot;accountId&quot;: &quot;faaba96d-ce6d-4e1a-be5c-4c484d4ee68a&quot;
   }
 }</component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="ProjectErrors" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 7
 }</component>
@@ -74,7 +78,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1763388716571</updated>
-      <workItem from="1763388717650" duration="9327000" />
+      <workItem from="1763388717650" duration="14478000" />
     </task>
     <task id="LOCAL-00001" summary="1 st commit">
       <option name="closed" value="true" />
@@ -92,7 +96,15 @@
       <option name="project" value="LOCAL" />
       <updated>1763389445580</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="menu done&#10;tasks mostly">
+      <option name="closed" value="true" />
+      <created>1763401868211</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1763401868211</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -101,6 +113,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="1 st commit" />
     <MESSAGE value="2 nd commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="2 nd commit" />
+    <MESSAGE value="menu done&#10;tasks mostly" />
+    <option name="LAST_COMMIT_MESSAGE" value="menu done&#10;tasks mostly" />
   </component>
 </project>
