@@ -85,5 +85,3 @@ This application allows users to manage a temporary list of to-do items directly
   * **Sequential IDs:** Task IDs are assigned sequentially starting from 1 and continue incrementing, even after a task is deleted.
 
 -----
-
-Do you want to add a contribution guide or a section about the technology used (Node.js/Readline) to the README?
