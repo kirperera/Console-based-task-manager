@@ -4,6 +4,7 @@ const Que = readline.createInterface({
     input: process.stdin,
     output: process.stdout
 });
+
 //declare list
 let id=1;
 const tasks = new Map();
@@ -11,7 +12,7 @@ const tasks = new Map();
 //List tasks
 function listTasks(){
     console.log("\nYour Tasks:");
-    tasks.forEach((task, key) =>{
+    tasks.forEach((task, key ) =>{
         console.log(`${key}. ${task}`);
     });
 
@@ -27,8 +28,19 @@ function addTask() {
         id++;
         menu();
     })
-
 }
+
+//delete task
+function deleteTask() {
+    Que.question("Enter the task number to delete: ", (inputId) => {
+        const key = Number(inputId);
+        tasks.delete(key);
+        console.log("Task deleted!");
+
+        menu();
+    });
+}
+
 //start menu
 function menu(){
 console.log("Welcome to Task manager! \n");
@@ -45,8 +57,12 @@ Que.question("Enter your choice:",(num) =>{
     else if(num==2){
        addTask()
     }
-    else if(num==3){}
-    else if(num==4){}
+    else if(num==3){
+
+    }
+    else if(num==4){
+       deleteTask()
+    }
     else if(num==5){}
     })
 }
