@@ -63,7 +63,10 @@ Que.question("Enter your choice:",(num) =>{
     else if(num==4){
        deleteTask()
     }
-    else if(num==5){}
+    else if(num==5){
+        console.log("👋 Exiting program. Goodbye!")
+        Que.close();
+    }
     })
 }
 
