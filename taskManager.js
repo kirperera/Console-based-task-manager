@@ -30,6 +30,19 @@ function addTask() {
     })
 }
 
+//mark task as complete
+function taskComplete(){
+    Que.question("Enter task number to mark complete:",(inputId,updatedTask) =>{
+        const key = Number(inputId);
+        const completed = tasks.get(key);
+        updatedTask= completed.replace("[ ]","[x]");
+        tasks.set(key,updatedTask);
+        console.log(`✅ Task ${id-1} marked as complete!`)
+
+        menu();
+    })
+}
+
 //delete task
 function deleteTask() {
     Que.question("Enter the task number to delete: ", (inputId) => {
@@ -58,7 +71,7 @@ Que.question("Enter your choice:",(num) =>{
        addTask()
     }
     else if(num==3){
-
+       taskComplete()
     }
     else if(num==4){
        deleteTask()
